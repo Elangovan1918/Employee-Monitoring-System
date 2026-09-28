@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: employee_service
-
-  profiles:
-    active: dev
-
-server:
-  port: 8082
