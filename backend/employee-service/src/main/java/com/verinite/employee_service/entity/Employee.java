@@ -22,9 +22,6 @@ public class Employee {
     @Column(name = "EMPLOYEEID", nullable = false, unique = true)
     private String employeeId;
 
-    @Column(name = "USERID", nullable = false)
-    private Long userId;
-
     @Column(name = "FIRSTNAME", nullable = false)
     private String firstName;
 
@@ -37,19 +34,19 @@ public class Employee {
     private String phone;
 
     @Column(name = "DEPARTMENTID")
-    private Long departmentId;
+    private String departmentId;
 
     @Column(name = "DESIGNATIONID")
-    private Long designationId;
+    private String designationId;
 
     @Column(name = "MANAGERID")
-    private Long managerId;
+    private String managerId;
 
     @Column(name = "CLIENTID")
-    private Long clientId;
+    private String clientId;
 
     @Column(name = "LOCATIONID")
-    private Long locationId;
+    private String locationId;
 
     @Column(name = "JOININGDATE")
     private LocalDate joiningDate;
@@ -96,14 +93,6 @@ public class Employee {
         this.employeeId = employeeId;
     }
 
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -136,43 +125,44 @@ public class Employee {
         this.phone = phone;
     }
 
-    public Long getDepartmentId() {
+
+    public String getDepartmentId() {
         return departmentId;
     }
 
-    public void setDepartmentId(Long departmentId) {
+    public void setDepartmentId(String departmentId) {
         this.departmentId = departmentId;
     }
 
-    public Long getDesignationId() {
+    public String getDesignationId() {
         return designationId;
     }
 
-    public void setDesignationId(Long designationId) {
+    public void setDesignationId(String designationId) {
         this.designationId = designationId;
     }
 
-    public Long getManagerId() {
+    public String getManagerId() {
         return managerId;
     }
 
-    public void setManagerId(Long managerId) {
+    public void setManagerId(String managerId) {
         this.managerId = managerId;
     }
 
-    public Long getClientId() {
+    public String getClientId() {
         return clientId;
     }
 
-    public void setClientId(Long clientId) {
+    public void setClientId(String clientId) {
         this.clientId = clientId;
     }
 
-    public Long getLocationId() {
+    public String getLocationId() {
         return locationId;
     }
 
-    public void setLocationId(Long locationId) {
+    public void setLocationId(String locationId) {
         this.locationId = locationId;
     }
 

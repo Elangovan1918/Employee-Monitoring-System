@@ -3,7 +3,6 @@ package com.verinite.employee_service.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -13,9 +12,6 @@ public class EmployeeRequest {
 
     @NotBlank
     private String employeeId;
-
-    @NotNull
-    private Long userId;
 
     @NotBlank
     private String firstName;
@@ -28,15 +24,15 @@ public class EmployeeRequest {
 
     private String phone;
 
-    private Long departmentId;
+    private String departmentId;
 
-    private Long designationId;
+    private String designationId;
 
-    private Long managerId;
+    private String managerId;
 
-    private Long clientId;
+    private String clientId;
 
-    private Long locationId;
+    private String locationId;
 
     private LocalDate joiningDate;
 
@@ -46,14 +42,6 @@ public class EmployeeRequest {
 
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
     }
 
     public String getFirstName() {
@@ -88,43 +76,43 @@ public class EmployeeRequest {
         this.phone = phone;
     }
 
-    public Long getDepartmentId() {
+    public String getDepartmentId() {
         return departmentId;
     }
 
-    public void setDepartmentId(Long departmentId) {
+    public void setDepartmentId(String departmentId) {
         this.departmentId = departmentId;
     }
 
-    public Long getDesignationId() {
+    public String getDesignationId() {
         return designationId;
     }
 
-    public void setDesignationId(Long designationId) {
+    public void setDesignationId(String designationId) {
         this.designationId = designationId;
     }
 
-    public Long getManagerId() {
+    public String getManagerId() {
         return managerId;
     }
 
-    public void setManagerId(Long managerId) {
+    public void setManagerId(String managerId) {
         this.managerId = managerId;
     }
 
-    public Long getClientId() {
+    public String getClientId() {
         return clientId;
     }
 
-    public void setClientId(Long clientId) {
+    public void setClientId(String clientId) {
         this.clientId = clientId;
     }
 
-    public Long getLocationId() {
+    public String getLocationId() {
         return locationId;
     }
 
-    public void setLocationId(Long locationId) {
+    public void setLocationId(String locationId) {
         this.locationId = locationId;
     }
 

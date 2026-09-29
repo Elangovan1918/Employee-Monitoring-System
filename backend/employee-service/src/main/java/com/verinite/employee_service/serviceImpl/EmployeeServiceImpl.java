@@ -23,7 +23,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         Employee employee = Employee.builder()
                 .employeeId(request.getEmployeeId())
-                .userId(request.getUserId())
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
                 .email(request.getEmail())
@@ -71,7 +70,6 @@ public class EmployeeServiceImpl implements EmployeeService {
                         new RuntimeException("Employee not found: " + id));
 
         employee.setEmployeeId(request.getEmployeeId());
-        employee.setUserId(request.getUserId());
         employee.setFirstName(request.getFirstName());
         employee.setLastName(request.getLastName());
         employee.setEmail(request.getEmail());
@@ -104,7 +102,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         return EmployeeResponse.builder()
                 .id(employee.getId())
                 .employeeId(employee.getEmployeeId())
-                .userId(employee.getUserId())
                 .firstName(employee.getFirstName())
                 .lastName(employee.getLastName())
                 .email(employee.getEmail())
