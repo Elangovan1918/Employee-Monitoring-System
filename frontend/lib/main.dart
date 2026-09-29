@@ -108,13 +108,12 @@ class _StartupPageState extends State<_StartupPage>
               const _StartupLogo(size: 78),
               const SizedBox(height: 18),
               const Text(
-                'verinite',
+                'Employee Monitoring System',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xff4bb6d5),
-                  fontSize: 34,
+                  fontSize: 22,
                   fontWeight: FontWeight.w700,
-                  letterSpacing: 1,
                 ),
               ),
               const SizedBox(height: 16),

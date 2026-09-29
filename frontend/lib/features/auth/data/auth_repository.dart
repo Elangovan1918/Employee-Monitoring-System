@@ -3,17 +3,13 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../core/network/api_config.dart';
 import '../models/login_session.dart';
-
-const apiBaseUrl = String.fromEnvironment(
-  'API_BASE_URL',
-  defaultValue: 'http://localhost:8081',
-);
 
 class AuthRepository {
   Future<LoginSession> login(String username, String password) async {
     final response = await http.post(
-      Uri.parse('$apiBaseUrl/verinite/EMS/auth/login'),
+      Uri.parse('$authApiBaseUrl/verinite/EMS/auth/login'),
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({'username': username, 'password': password}),
     );

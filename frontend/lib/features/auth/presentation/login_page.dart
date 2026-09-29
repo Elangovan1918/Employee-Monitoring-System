@@ -124,17 +124,17 @@ class _VeriniteSidePanel extends StatelessWidget {
             _LogoMark(size: compact ? 76 : 120),
             SizedBox(height: compact ? 18 : 28),
             Text(
-              'verinite',
+              'Employee Monitoring System',
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: compact ? 38 : 54,
+                fontSize: compact ? 25 : 38,
                 fontWeight: FontWeight.w700,
-                letterSpacing: 1.5,
               ),
             ),
             const SizedBox(height: 16),
             Text(
-              'We Make Payments Happen',
+              'Workforce overview and employee records',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.white.withValues(alpha: 0.92),

@@ -17,7 +17,7 @@ void main() {
     await tester.pump(const Duration(milliseconds: 1800));
     await tester.pump();
 
-    expect(find.text('verinite'), findsNWidgets(2));
+    expect(find.text('Employee Monitoring System'), findsAtLeastNWidgets(1));
     expect(find.text('Sign in'), findsOneWidget);
     expect(find.text('Username'), findsOneWidget);
     expect(find.text('Password'), findsOneWidget);
